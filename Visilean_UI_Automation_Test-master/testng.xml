@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.Listeners.TestListener"/>
+        <listener class-name="utilities.Listeners.AnnotationTransformer"/>
+    </listeners>
+    <test verbose="2" name="C:/Users/Chanchalkumar Patel/Documents/Selenium_Automation/Visilean_UI_Automation_Test">
+        <classes>
+            <class name="testClass.login.LoginTest">
+                <methods>
+                    <include name="navigateToURL"/>
+                    <include name="setUserName"/>
+                    <include name="setPassword"/>
+                    <include name="workSpaceSelection"/>
+                    <include name="projectSelection"/>
+                </methods>
+            </class>
+            <class name="testClass.landingPage.LandingPageTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="scratchButton"/>
+                </methods>
+            </class>
+            <class name="testClass.zoneAndLevel.DefaultLevelAndZonesTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="renameDefaultLevel"/>
+                    <include name="renameDefaultZone"/>
+                    <include name="addNewLeafZone"/>
+                    <include name="duplicateZone"/>
+                    <include name="addZoneInBetween"/>
+                    <include name="deleteZone"/>
+                    <include name="addSecondLevel"/>
+                    <include name="deleteSecondLevel"/>
+                    <include name="addSecondLevelAgain"/>
+                </methods>
+            </class>
+            <class name="testClass.zoneAndLevel.SecondLevelAndZonesTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="renameDefaultLevel"/>
+                    <include name="renameDefaultZone"/>
+                    <include name="hideAndShowLevel"/>
+                    <include name="addNewLeafZone"/>
+                    <include name="duplicateZone"/>
+                    <include name="addZoneInBetween"/>
+                    <include name="deleteZone"/>
+                    <include name="renameSecondLevel"/>
+                    <include name="renameSecondGroup"/>
+                    <include name="addNewLeafGroup"/>
+                    <include name="duplicateGroup"/>
+                    <include name="addGroupInBetween"/>
+                    <include name="deleteGroup"/>
+                    <include name="addThirdLevel"/>
+                    <include name="deleteThirdLevel"/>
+                    <include name="addThirdLevelAgain"/>
+                </methods>
+            </class>
+            <class name="testClass.zoneAndLevel.ThirdLevelAndZonesTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="renameDefaultLevel"/>
+                    <include name="renameDefaultZone"/>
+                    <include name="hideAndShowLevel"/>
+                    <include name="addNewLeafZone"/>
+                    <include name="duplicateZone"/>
+                    <include name="addZoneInBetween"/>
+                    <include name="deleteZone"/>
+                    <include name="renameSecondLevel"/>
+                    <include name="renameFirstGroupSecondLevel"/>
+                    <include name="addNewLeafGroupSecondLevel"/>
+                    <include name="duplicateGroupSecondLevel"/>
+                    <include name="addGroupInBetweenSecondLevel"/>
+                    <include name="deleteGroupSecondLevel"/>
+                    <include name="renameThirdLevel"/>
+                    <include name="renameGroupThirdLevel"/>
+                    <include name="addNewLeafGroupThirdLevel"/>
+                    <include name="duplicateGroupThirdLevel"/>
+                    <include name="addGroupInBetweenThirdLevel"/>
+                    <include name="deleteGroupThirdLevel"/>
+                </methods>
+            </class>
+            <class name="testClass.tasks.DesignTasksScenariosTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="designTaskCreationWithoutBasicDetails"/>
+                    <include name="designTask1DetailsVerification"/>
+                    <include name="designTaskCreationWithBasicDetails"/>
+                    <include name="designTask2DetailsVerification"/>
+                    <include name="updateTaskName"/>
+                    <include name="updateTaskTrade"/>
+                    <include name="updateTaskDuration"/>
+                    <include name="updateTaskResources"/>
+                    <include name="updateTaskDescription"/>
+                    <include name="selectTasksDefaultLevel"/>
+                    <include name="zoneDuplicateWithTasksDefaultLevel"/>
+                    <include name="zoneDeleteWithTasksDefaultLevel"/>
+                    <include name="moveSingleTask"/>
+                    <include name="copySingleTask"/>
+                    <include name="changeTaskPriority"/>
+                    <include name="changeZoneSingleTask"/>
+                    <include name="allocateOwner"/>
+                    <include name="verifyTaskStatus"/>
+                    <include name="changeTaskStatus"/>
+                </methods>
+            </class>
+            <class name="testClass.tasks.ConstructionTasksScenariosTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="constructionTaskCreationWithoutBasicDetails"/>
+                    <include name="constructionTask1DetailsVerification"/>
+                    <include name="constructionTaskCreationWithBasicDetails"/>
+                    <include name="constructionTask2DetailsVerification"/>
+                    <include name="updateTaskName"/>
+                    <include name="updateTaskTrade"/>
+                    <include name="updateTaskDuration"/>
+                    <include name="updateTaskResources"/>
+                    <include name="updateTaskDescription"/>
+                    <include name="selectTasksDefaultLevel"/>
+                    <include name="zoneDuplicateWithTasksDefaultLevel"/>
+                    <include name="zoneDeleteWithTasksDefaultLevel"/>
+                    <include name="moveSingleTask"/>
+                    <include name="copySingleTask"/>
+                    <include name="changeTaskPriority"/>
+                    <include name="changeZoneSingleTask"/>
+                    <include name="allocateOwner"/>
+                    <include name="verifyTaskStatus"/>
+                    <include name="changeTaskStatus"/>
+                </methods>
+            </class>
+            <class name="testClass.tasks.CommonTasksScenariosTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="selectTasksFromSecondThirdLevel"/>
+                    <include name="moveMultipleTasks"/>
+                    <include name="changeTaskType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
